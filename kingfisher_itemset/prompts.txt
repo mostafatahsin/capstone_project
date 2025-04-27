@@ -1,0 +1,29 @@
+This codebase contains all the code for the kingfisher software. The algorithm takes in a file that contains the dataset. The file contents look like the picture attached. Each row refers to a transaction. and each value refers to the existence of a particular attribute in that transaction. The attribute numbers are sorted and the numbers can be very large so we would need to store them as unsigned long long int which referred to as a bitvector in the codebase. After the input file is read the contents are saved in a data structure. The algorithm performs various operations after the input file is read like frequency counting of different combinations of attributes. Now, the way the software stores the contents of the file is using a 2D matrix where each column corresponds to a transaction and each row corresponds to an attribute, and the values are 0 or 1 referring to absence or presence of a particular attribute in a particular column. 
+
+Now, for the project, what I need to achieve is use a different representation to store the file contents- what I am trying to do is use an itemset representation instead of a binary representation of the file's contents, and then use the itemset representation to carry out whatever tasks are required by the algorithm. Itemsets can not be a 2D array. it has to be an array of pointers where each transaction will only contain the items that are present in the dataset and will only allocate memory for those items. The whole point of converting the binary representation to the itemset representation is to use less memory. Can you please go through the whole codebase and suggest all the necessary changes required to incorporate this? Make sure all the parts of the software are aligned with each other so that there are no errors in the code. Also, make sure that all the memory management is done properly.
+
+Okay, I can help you with that. Here are the locations where amatr is used in the code:
+
+done
+--------
+initattrmatr in bitmatrice.c 
+
+frset in kingfisher.c    -- need to pass the value of `n` to frset through prunecandM and prunecandpF and visit and intervisit -- i guess not needed anymore
+
+generate1sets in kingfisher.c
+
+generatecandidates in kingfisher.c  -- no changes required
+
+visit in kingfisher.c  -- no changes required
+intervisit in kingfisher.c
+
+prunecandpF in kingfisher.c  -- no changes required
+prunecandM in kingfisher.c
+
+main in kingfisher.c     -- initialize like: int *row_lengths
+
+not done
+--------
+
+
+
