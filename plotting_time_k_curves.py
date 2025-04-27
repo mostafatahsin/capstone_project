@@ -55,7 +55,7 @@ plt.plot(df["k"], df["itemset_exec_time"], label="Itemset representation", marke
 
 plt.xlabel("Total number of attribute-value pair, k (in thousands)", fontsize=14)
 plt.ylabel("Execution time (seconds)", fontsize=14)
-plt.title("Maximum row length = 40", fontsize=14)  #change
+plt.title("Row length = 40", fontsize=14)  #change
 plt.legend(fontsize=12)
 
 plt.xticks(fontsize=12)
