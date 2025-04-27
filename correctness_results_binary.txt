@@ -214,3 +214,93 @@ Among 10 best rules 0 negative rules, avg(M)=-2.79e+03 stdev(M)=1.37e+03
 Among 13 best rules 0 negative rules, avg(M)=-2.40e+03 stdev(M)=1.39e+03
   avg(cf)=0.872 stdev(cf)=0.171 avg(gamma)=45.391 stdev(gamma)=82.683
   avg(delta)=0.017 stdev(delta)=0.015 avg(fr)=4194.8 stdev(fr)=7743.8
+
+------------------------------------
+
+Input file [chess.dat]
+Threshold -1000.00
+Last item number <=76, 3196 rows data.
+No minimum frequency defined, using 0.001564 (abs. minfr 5).
+If you want use smaller minfr, modify measures.h.
+No minimum confidence defined, using 0.0
+Searches only positive rules (default, change with option t).
+Using measure ln(pF)
+Data matrix takes 242896 bits (0 MB) space
+Calculates all ln-factorials ln(m!) for m=1 to 3196
+(0.0 seconds)
+Determines absolute minimum frequency threshold from maximal p-value
+(0.0 seconds)
+Based on threshold valM, m(A=a)>=304 for any significant rule X->A=a
+Initializes
+Removing 15 attributes (P(A)<0.095119=minfr or P(A)=1), left 61 attributes
+Data matrix takes 194956 bits (0.0 MB) space; freed 47940 bits (0.0 MB)
+level 1
+level 2
+number of 2-sets 1213
+No rules found.
+level 3
+number of 3-sets 10649
+best of level 3 M=-2118.86. 4 non-red. significant rules found, 4 of them
+ added to the best Q rules. Updated valM=-1.000e+03
+level 4
+number of 4-sets 53749
+best of level 4 M=-1229.14. 3 non-red. significant rules found, 3 of them
+ added to the best Q rules. Updated valM=-1.000e+03
+level 5
+number of 5-sets 172078
+best of level 5 M=-1011.25. 1 non-red. significant rules found, 1 of them
+ added to the best Q rules. Updated valM=-1.000e+03
+level 6
+number of 6-sets 369531
+best of level 6 M=-1044.31. 1 non-red. significant rules found, 1 of them
+ added to the best Q rules. Updated valM=-1.000e+03
+level 7
+number of 7-sets 551896
+No rules found.
+level 8
+number of 8-sets 586286
+No rules found.
+level 9
+number of 9-sets 448020
+No rules found.
+level 10
+number of 10-sets 246027
+No rules found.
+level 11
+number of 11-sets 95374
+No rules found.
+level 12
+number of 12-sets 24945
+No rules found.
+level 13
+number of 13-sets 4005
+No rules found.
+level 14
+number of 14-sets 321
+No rules found.
+level 15
+number of 15-sets 8
+No rules found.
+Last level 15. Last valM=-1000.00.
+Number of all non-redundant significant rules 9.
+Number of added sets 2564163. Number of frequency evaluations 2594580.
+Number of explicitely tested rules at most tests=2148874
+Since measure was ln(p), ln(p*tests)=valM+ln(tests)=-985.42.
+The best rules: (gamma=lift, delta=leverage)
+17 46 -> 19 fr=1980 (0.6195), cf=1.000, gamma=1.614, delta=0.236, M=-2.119e+03
+54 66 74 -> 24 fr=1379 (0.4315), cf=0.773, gamma=1.791, delta=0.191, M=-1.229e+03
+20 46 -> 18 fr=576 (0.1802), cf=1.000, gamma=4.592, delta=0.141, M=-1.187e+03
+17 20 -> 47 fr=520 (0.1627), cf=1.000, gamma=4.994, delta=0.130, M=-1.110e+03
+54 60 74 -> 24 fr=1379 (0.4315), cf=0.721, gamma=1.672, delta=0.173, M=-1.053e+03
+3 31 42 64 72 -> 23 fr=1642 (0.5138), cf=0.894, gamma=1.572, delta=0.187, M=-1.044e+03
+16 20 36 -> 18 fr=612 (0.1915), cf=0.862, gamma=3.958, delta=0.143, M=-1.025e+03
+16 20 -> 18 fr=613 (0.1918), cf=0.860, gamma=3.948, delta=0.143, M=-1.024e+03
+3 31 64 72 -> 23 fr=1642 (0.5138), cf=0.886, gamma=1.559, delta=0.184, M=-1.011e+03
+Totally 9 rules, when mincf=0.00 and threshold-M=-1.00e+03
+Among 9 best rules 0 negative rules, avg(M)=-1.20e+03 stdev(M)=3.33e+02
+  avg(cf)=0.888 stdev(cf)=0.094 avg(gamma)=2.856 stdev(gamma)=1.390
+  avg(delta)=0.170 stdev(delta)=0.032 avg(fr)=1149.2 stdev(fr)=535.6
+Among 9 best rules 0 negative rules, avg(M)=-1.20e+03 stdev(M)=3.33e+02
+  avg(cf)=0.888 stdev(cf)=0.094 avg(gamma)=2.856 stdev(gamma)=1.390
+  avg(delta)=0.170 stdev(delta)=0.032 avg(fr)=1149.2 stdev(fr)=535.6
+Total execution time = (4.669788 s)
